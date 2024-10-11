@@ -1,8 +1,13 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import TodosPage from "./pages/TodosPage";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Initial setup!</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<TodosPage />} />
+      </Routes>
+    </Router>
   );
 };
 
